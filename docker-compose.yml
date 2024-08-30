@@ -1,0 +1,9 @@
+version: '3'
+services:
+  uk-api:
+    image: stars-beyond/sb-dashboard:latest
+    container_name: sb-dashboard-container
+    ports:
+      - "3007:3007"
+    environment:
+      NODE_ENV: production
